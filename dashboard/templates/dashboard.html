@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flame Sensor Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Flame Sensor Dashboard</h1>
+        <div class="status-indicator">
+            <h2>Sensor Status:</h2>
+            <p class="{{ flame_status_class }}">{{ flame_status_text }}</p>
+        </div>
+    </div>
+</body>
+</html>
